@@ -4,10 +4,16 @@ Foi Criado para armazenamento e exposição de projetos em Front-End, espero que
 Repositório para sala de aula
 
 teste títulos
-#Título maior
-##medio
-###menor
+
+# Título maior
+
+## medio
+
+### menor
+
 **negrito**
+
 ~~teste~~
+
 __teste__
 
