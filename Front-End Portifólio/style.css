@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(26, 26, 26);
     text-align: center;
     color: aliceblue;
     display: flex;
@@ -9,10 +9,12 @@ body{
 }
 
 #logosousamedia{
+    position: fixed;
+    top: 0;
     float: left;
     margin-top: 1px;
     left: 10px;
-    width: 380px;
+    width: 180px;
     height: auto;
 }
 
@@ -27,4 +29,17 @@ p{
     height: 50px;
     font-size: 35px;
     margin-bottom: 1px;
+}
+
+.hero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.atividades{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }

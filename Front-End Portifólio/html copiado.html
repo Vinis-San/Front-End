@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio Sousa Media - Projetos de programação e design inovadores">
+    <link rel="shortcut icon" href="Imagens/favIcon.png" type="image/x-icon">
+    <title>Sousa Media - Portfólio</title>
+    <link rel="stylesheet" href="csscopiado.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img id="logosousamedia" src="Imagens/Logo Sousa Media Branca.png" alt="Logotipo Sousa Media">
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
+        </div>
+        <div class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Seção Início -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Sousa Media">Sousa Media</h1>
+                <p class="typing-animation">Transformando ideias em experiências digitais únicas</p>
+                <div class="cta-buttons">
+                    <button onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})" class="btn primary">Ver Projetos</button>
+                    <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" class="btn secondary">Contato</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="about" class="about">
+            <h2>Sobre Nós</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>A Sousa Media é um estúdio criativo especializado em desenvolvimento web e design inovador. Nossa missão é criar experiências digitais memoráveis que conectam marcas aos seus públicos.</p>
+                    <div class="skills">
+                        <h3>Tecnologias</h3>
+                        <div class="skill-icons">
+                            <i class="fab fa-html5" title="HTML5"></i>
+                            <i class="fab fa-css3-alt" title="CSS3"></i>
+                            <i class="fab fa-js" title="JavaScript"></i>
+                            <i class="fab fa-react" title="React"></i>
+                            <i class="fab fa-node" title="Node.js"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projects" class="projects">
+            <h2>Projetos</h2>
+            <div class="project-grid">
+                <!-- Projeto 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Imagens/projeto1.jpg" alt="Projeto 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Nome do Projeto</h3>
+                        <p>Descrição do projeto aqui.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn small">Ver Projeto</a>
+                            <a href="#" class="btn small secondary">Código</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais projetos conforme necessário -->
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contact" class="contact">
+            <h2>Contato</h2>
+            <div class="contact-content">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Nome</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required></textarea>
+                        <label for="message">Mensagem</label>
+                    </div>
+                    <button type="submit" class="btn primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/Vinis-San" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 Sousa Media. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
