@@ -5,7 +5,10 @@
 }
 
 body{
-    background-color: rgb(49, 49, 49);
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-direction: column;
     align-items: center;
 
 }
@@ -16,26 +19,21 @@ body{
     font-size: 3dvh;
     color: aliceblue;
 }
-#cardproduto{
-    background-color: white;
-    border-radius: 20px;
-    width: 300px;
-    height: auto;
-    margin: auto;
-    padding: 30px;
-    box-shadow: 5px 5px 10px rgb(49, 49, 49);
-}
 #conteudo{
     width: 100%;
-    height: 100dvh;
-    background-color: rgb(255, 233, 255);
+    height: auto;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-#rodape{
-    width: 90%;
-    line-height: 80px;
+footer{
+    width: 100%;
+    line-height: 150px;
     background-color: rgb(22, 22, 22);
-    margin-bottom: 0;
     color: aliceblue;
+    text-align: center;
+
 }
 h3{
     color:rgb(36, 36, 36);
@@ -49,9 +47,98 @@ h3{
 }
 
 #foto_bolo{
-    width: 200px;
     height: auto;
     border-radius: 10px;
     text-align:center;
     margin: auto;
+    max-width: 100% ;
+}
+
+
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+#btncomprar {
+    display: flex;
+    justify-content:baseline;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #181717;
+    outline: 3px #181717 solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    width: 300px;
+    
+  }
+  
+  #btncomprar .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+  
+  #btncomprar svg path {
+    transition: 400ms;
+  }
+  
+  #btncomprar:hover {
+    background-color: transparent;
+  }
+  
+  #btncomprar:hover .text {
+    color: #181717;
+  }
+  
+  #btncomprar:hover svg path {
+    fill: #181717;
+  }
+
+  .cardproduto { 
+    background-color: white; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    margin: 10px 10px; 
+    padding: 15px;  
+    text-align: center; 
+    width: 300px;
+    height: 700px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+} 
+  .cardproduto img { 
+    max-width: 100%; 
+    border-radius: 5px; 
+} 
+  .cardproduto h3 { 
+    font-size: 18px; 
+    margin: 10px 0; 
+    
+}
+
+.cardproduto:hover ~ .cardproduto {
+    filter: blur(5px) grayscale(100%);
+    transform: scale(0.95);
+    pointer-events: none;
+}
+
+.cardproduto:hover {
+    z-index: 10;
+    transform: scale(1.05);
+}
+
+#banner{
+background-image: url(imagens/banner.jpg);
+width: 90%;
+height: 300px;
+padding: 24px;
+background-position: center;
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
 }
