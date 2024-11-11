@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e8e6e6;
+
+}
+header{
+    background-color: #ffffff;
+    color: black;
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+footer{
+    background-color: black;
+    width: 99%;
+    height: 100px;
+    position: relative;
+    bottom: 0;
+    color: white;
+    padding-left: 15px;
+
+}
+
+
+nav{
+    display: flex;
+}
+
+#navbar{
+    width: 500px;
+}
+
+#navbarinfo{
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#navbarinfo a{
+font-size: 20px;
+}
+
+#navbarinfo h1{
+    align-self:center;
+    width:fit-content;
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.CLnavbares{
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.CLnavbares a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+
+
+}
+
+#allbanner{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background-color: blueviolet;
+}
+
+#banner {
+     width: 75%;
+    height:auto;
+    display: flex;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+#banner2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+#text1{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    font-size: 35px;
+    background-color: e8e6e6;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+}
+
+#centroinfo{
+    background-color:#e8e6e6;
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+#servico{
+    background-color: #ffffff;
+    width: 75%;
+    padding: 0px 35px 50px 50px;
+    margin: 20px;
+    border-radius: 30px;
+    margin-top: 10px;
+    box-shadow:  5px 15px 10px;
+    margin-bottom: 20px;
+
+}
+
+#centroinfo h1{
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin: 15px;
+}
+#servico p{
+    word-wrap: break-word; /* Quebra a palavra no limite do contêiner */ 
+    display: block; 
+    line-height: 1.2; /* Ajusta a altura da linha para melhorar a legibilidade */ 
+    margin: 10px 0; /* Espaçamento entre os parágrafos */
+}
+
+.subtituloinfo { 
+    display: block; /* Garante que o subtítulo comece em uma nova linha */ 
+    font-weight: bold; 
+    margin-top: 10px; /* Espaçamento acima do subtítulo */
+    font-size: 25px;
+}
+
+#agenda{
+    background-color: #ffffff;
+    width: 25%;
+    margin: 15px;
+    padding: 0px 50px 50px 50px;
+    border-radius: 30px;
+    margin-top: 10px;
+    box-shadow:  5px 15px 10px;
+    margin-bottom: 20px;
+}
+
+
+
