@@ -17,7 +17,6 @@ header {
     height: 120px;
     background-color: rgb(22, 22, 22);
     font-size: 3dvh;
-    color: aliceblue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,17 +29,24 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     bottom: 0;
-    line-height: 150px;
+    height: 59px;
     background-color: rgb(22, 22, 22);
     color: aliceblue;
-    text-align: center;
     position: relative;
+}
+
+footer #direitos{
+    font-size: 20px;
+    margin: 10px;
 }
 
 h3 {
@@ -113,6 +119,7 @@ flex-direction:row;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 } 
 
 .cardfilho img { 
@@ -179,11 +186,12 @@ flex-direction:row;
 }
 
 nav{
+    display: flex;
+    position: relative;
     color: #ddd;
     width: 100%;
-    justify-content: space-around;
-    left: 10px;
-    padding-left: 30px;
+    
+
 }
 nav a{
     color: #ffffff;
