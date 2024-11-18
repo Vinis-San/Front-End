@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+
+}
+header h1{
+    color: white;
+    font-size: 70px;
+}
+
+body{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    bottom: 0;
+
+}
+
+#funcoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #242424;
+    border-radius: 45px;
+    margin: 30px;
+}
+
+.functionn{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    height: 300px; /*altura*/
+    width: 350px; /*largura*/
+    justify-content: space-around;
+    margin: 30px;
+    align-items: center ;
+    padding: 15px;
+}
+
+.btnfunction {
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #353535;
+    border: none;
+    border-radius: 30px;  /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+    color: white;
+}
+
+.btnfunction:hover {
+    background-color: #45a049;  /* Cor de fundo alterada ao passar o mouse */
+    transform: scale(1.1);  /* Aumenta o tamanho do botão */
+}
+
+.btnfunction:active {
+    background-color: #388e3c;  /* Cor de fundo quando pressionado */
+    transform: scale(0.98);  /* Botão diminui um pouco */
+}
+
