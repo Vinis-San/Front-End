@@ -29,33 +29,47 @@ function atividade2() {
 
 function atividade4() {
     alert("Bem vindo ao verificador de notas!")
-     nota = prompt("Escreva sua nota, Lembrando que a média é 7: ")
-     if(nota >= 7){
+    nota = prompt("Escreva sua nota, Lembrando que a média é 7: ")
+    if (nota >= 7) {
         alert("Parabéns, você passou!")
-     }
-     else{
+    }
+    else {
         alert("Infelizmente você reprovou!")
         window.location = 'https://www.alura.com.br/'
-     }
+    }
 }
 
 //atv 5 dias da semana
 
-function diasemana(switchsemana){
-    switch(switchsemana){
-        case (switchsemana = 1){
-            alert("Teste1")
-        }
-    }
-}
+function diasemana() {
 
-function atividade5() {
-    numb = Number(prompt("Bem vindo ao dias da semana, escolha um numero de 1 á 7: "))
-    switch(numb){
-        case(numb = 1){
-        alert("1 igual a Segunda-Feira")}
-    }
-}
+    numb = Number(prompt("Bem vindo ao dias da semana, escolha um numero de 1 a 7: "))
 
-function atividade6() {
+    switch (numb) {
+        case 1:
+            alert("Segunda-Feira")
+            break
+
+        case 2:
+            alert("Terça-Feira")
+            break
+        case 3:
+            alert("Quarta-Feira")
+            break
+        case 4:
+            alert("Quinta-Feira")
+            break
+
+        case 5:
+            alert("Sexta-Feira")
+            break
+        case 6:
+            alert("Sábado")
+            break
+        case 7:
+            alert("Domingo")
+            break
+
+
+    }
 }
