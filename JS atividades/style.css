@@ -49,8 +49,8 @@ footer{
     flex-direction: column;
     background-color: white;
     border-radius: 30px;
-    height: 300px; /*altura*/
-    width: 350px; /*largura*/
+    height: 200px; /*altura*/
+    width: 250px; /*largura*/
     justify-content: space-around;
     margin: 30px;
     align-items: center ;
