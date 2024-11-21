@@ -1,113 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Atividades</title>
-  </head>
 
-  <body>
-    <header>
-      <h1>Atividades de JavaScript</h1>
-    </header>
-    <main>
-      <div id="funcoes">
-        <div class="functionn" id="function1">
-          <p class="btntxt">
-            A vendinha é um mini mercado virtual onde você pode escolher entre
-            diferentes produtos. Nesta atividade, utilizamos a função
-            <code>alert()</code> para exibir mensagens de boas-vindas e
-            escolhas, e a função <code>prompt()</code> para capturar a escolha
-            do usuário. Dependendo da escolha, um <code>switch</code> determina
-            a mensagem a ser exibida.
-          </p>
-          <button class="btnfunction" onclick="atividade1()">Vendinha</button>
-        </div>
-        <div class="functionn" id="function2">
-          <p class="btntxt">
-            A verificação de Idade é um sistema que controla o acesso ao site
-            com base na idade do usuário. A função <code>alert()</code> é usada
-            para saudar o usuário e solicitar a idade através de
-            <code>prompt()</code>. Um <code>if-else</code> verifica se a idade é
-            maior ou igual a 18 para permitir o acesso, caso contrário, o
-            usuário é redirecionado usando <code>window.location</code>.
-          </p>
-          <button class="btnfunction" onclick="atividade2()">
-            Verificar Idade
-          </button>
-        </div>
-        <div class="functionn" id="function3">
-          <p class="btntxt">
-            A Calculadora é uma ferramenta simples para realizar operações
-            matemáticas básicas. Utilizamos
-            <code>document.getElementById</code> para capturar os valores de
-            entrada e o operador. Um <code>switch</code> realiza o cálculo com
-            base no operador selecionado e <code>innerText</code> exibe o
-            resultado.
-          </p>
-          <button
-            class="btnfunction"
-            onclick="window.location.href='calculadora.html';"
-          >
-            Calculadora
-          </button>
-        </div>
-        <div class="functionn" id="function4">
-          <p class="btntxt">
-            O verificador de nota é uma aplicação que avalia se a nota do
-            usuário está acima da média. A função <code>alert()</code> introduz
-            a atividade e <code>prompt()</code> captura a nota. Um
-            <code>if-else</code> verifica se a nota é maior ou igual a 7 para
-            exibir uma mensagem de aprovação ou reprovação, e redireciona o
-            usuário se reprovado.
-          </p>
-          <button class="btnfunction" onclick="atividade4()">
-            Verificador de Nota
-          </button>
-        </div>
-        <div class="functionn" id="function5">
-          <p class="btntxt">
-            O Dias da semana é um verificador que informa o dia da semana com
-            base em um número de 1 a 7. Utiliza <code>prompt()</code> para
-            capturar o número e um <code>switch</code> para mapear o número ao
-            dia da semana correspondente, exibindo a resposta com
-            <code>alert()</code>.
-          </p>
-          <button class="btnfunction" onclick="diasemana()">
-            Dias da Semana
-          </button>
-        </div>
-        <div class="functionn" id="function6">
-          <p>
-            Aula de Javascript sendo feita no dia 19/11/2024, aperte o botão
-            para ver a atividade desse dia :)
-          </p>
-          <button
-            class="btnfunction"
-            onclick="window.location.href='19-11.html';"
-          >
-            Aula 19/11
-          </button>
-        </div>
-        <div class="functionn" id="function7">
-          <p>
-            Teste de População usando Array(Codigo gerado pelo GPT)
-          </p>
-          <button
-            class="btnfunction"
-            onclick="window.location.href='popular.html';"
-          >
-            Data 19/11  utilizando array
-          </button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Atividades</title>
+</head>
+
+<body>
+  <header>
+    <h1>Atividades de JavaScript</h1>
+  </header>
+  <main>
+    <div id="funcoes">
+      <div class="functionn" id="function1">
+        <p class="btntxt">
+          A vendinha é um mini mercado virtual onde você pode escolher entre
+          diferentes produtos. Nesta atividade, utilizamos a função
+          <code>alert()</code> para exibir mensagens de boas-vindas e
+          escolhas, e a função <code>prompt()</code> para capturar a escolha
+          do usuário. Dependendo da escolha, um <code>switch</code> determina
+          a mensagem a ser exibida.
+        </p>
+        <button class="btnfunction" onclick="atividade1()">Vendinha</button>
       </div>
-    </main>
-    <footer></footer>
-    <script src="script.js"></script>
-  </body>
+      <div class="functionn" id="function2">
+        <p class="btntxt">
+          A verificação de Idade é um sistema que controla o acesso ao site
+          com base na idade do usuário. A função <code>alert()</code> é usada
+          para saudar o usuário e solicitar a idade através de
+          <code>prompt()</code>. Um <code>if-else</code> verifica se a idade é
+          maior ou igual a 18 para permitir o acesso, caso contrário, o
+          usuário é redirecionado usando <code>window.location</code>.
+        </p>
+        <button class="btnfunction" onclick="atividade2()">
+          Verificar Idade
+        </button>
+      </div>
+      <div class="functionn" id="function3">
+        <p class="btntxt">
+          A Calculadora é uma ferramenta simples para realizar operações
+          matemáticas básicas. Utilizamos
+          <code>document.getElementById</code> para capturar os valores de
+          entrada e o operador. Um <code>switch</code> realiza o cálculo com
+          base no operador selecionado e <code>innerText</code> exibe o
+          resultado.
+        </p>
+        <button class="btnfunction" onclick="window.location.href='calculadora.html';">
+          Calculadora
+        </button>
+      </div>
+      <div class="functionn" id="function4">
+        <p class="btntxt">
+          O verificador de nota é uma aplicação que avalia se a nota do
+          usuário está acima da média. A função <code>alert()</code> introduz
+          a atividade e <code>prompt()</code> captura a nota. Um
+          <code>if-else</code> verifica se a nota é maior ou igual a 7 para
+          exibir uma mensagem de aprovação ou reprovação, e redireciona o
+          usuário se reprovado.
+        </p>
+        <button class="btnfunction" onclick="atividade4()">
+          Verificador de Nota
+        </button>
+      </div>
+      <div class="functionn" id="function5">
+        <p class="btntxt">
+          O Dias da semana é um verificador que informa o dia da semana com
+          base em um número de 1 a 7. Utiliza <code>prompt()</code> para
+          capturar o número e um <code>switch</code> para mapear o número ao
+          dia da semana correspondente, exibindo a resposta com
+          <code>alert()</code>.
+        </p>
+        <button class="btnfunction" onclick="diasemana()">
+          Dias da Semana
+        </button>
+      </div>
+      <div class="functionn" id="function6">
+        <p>
+          Aula de Javascript sendo feita no dia 19/11/2024, aperte o botão
+          para ver a atividade desse dia :)
+        </p>
+        <button class="btnfunction" onclick="window.location.href='19-11.html';">
+          Aula 19/11
+        </button>
+      </div>
+      <div class="functionn" id="function7">
+        <p>
+          Teste de População usando Array(Codigo gerado pelo GPT)
+        </p>
+        <button class="btnfunction" onclick="window.location.href='popular.html';">
+          Data 19/11 utilizando array
+        </button>
+      </div>
+      <div class="functionn" id="function7">
+        <p>
+          Aula 4 21.11 
+        </p>
+        <button class="btnfunction" onclick="window.location.href='aula4-while.html';">
+          Aula4 | While
+        </button>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="script.js"></script>
+</body>
+
 </html>

@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -13,21 +13,22 @@ header{
     flex-direction: row;
 
 }
-header h1{
+
+header h1 {
     margin-left: 20px;
     color: white;
     font-size: 35px;
 }
 
-body{
+body {
     background-color: aliceblue;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
 }
 
-footer{
+footer {
     display: flex;
     width: 100%;
     height: 100px;
@@ -37,29 +38,39 @@ footer{
 
 }
 
-#funcoes{
+#funcoes {
     display: flex;
     flex-wrap: wrap;
     background-color: #242424;
     border-radius: 45px;
     margin: 30px;
+    height: auto;
+    padding: 20px;
+    justify-content: center;
 }
 
-.functionn{
+.functionn {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     background-color: white;
     border-radius: 30px;
-    width: 250px; /*largura*/
+    width: 250px;
+    /*largura*/
+    height: auto;
     justify-content: space-around;
     margin: 15px;
-    align-items: center ;
+    align-items: center;
     padding: 15px;
     text-align: center;
+    transition: 0.6s;
 }
 
-.functionn p{
+.functionn:hover {
+    transform: scale(1.05);
+
+}
+
+.functionn p {
     font-size: 18px;
     align-self: center;
     text-decoration: none;
@@ -73,7 +84,8 @@ footer{
     font-size: 18px;
     background-color: #353535;
     border: none;
-    border-radius: 30px;  /* Bordas arredondadas */
+    border-radius: 30px;
+    /* Bordas arredondadas */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
     text-align: center;
@@ -81,12 +93,15 @@ footer{
 }
 
 .btnfunction:hover {
-    background-color: #45a049;  /* Cor de fundo alterada ao passar o mouse */
-    transform: scale(1.1);  /* Aumenta o tamanho do botão */
+    background-color: #45a049;
+    /* Cor de fundo alterada ao passar o mouse */
+    transform: scale(1.1);
+    /* Aumenta o tamanho do botão */
 }
 
 .btnfunction:active {
-    background-color: #388e3c;  /* Cor de fundo quando pressionado */
-    transform: scale(0.98);  /* Botão diminui um pouco */
+    background-color: #388e3c;
+    /* Cor de fundo quando pressionado */
+    transform: scale(0.98);
+    /* Botão diminui um pouco */
 }
-
