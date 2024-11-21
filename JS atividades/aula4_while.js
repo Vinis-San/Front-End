@@ -1,5 +1,5 @@
 function carregarcatalogo() {
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 10; i++) {
         document.getElementById('catalogo').innerHTML += `<div class="container_catalogo">
                 <img src="/imagens/diario de um banana.jpg" alt="Imagem do Livro">
                 <div class="description">
@@ -7,7 +7,7 @@ function carregarcatalogo() {
                     <h3 class="preco">R$39,99</h3>
                 </div>
                 <div class="botao_container">
-                    <button class="comprar"> Comprar</button>
+                    <button class="comprarbtn"> Comprar</button>
                     <button class="Addcarrinho"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
