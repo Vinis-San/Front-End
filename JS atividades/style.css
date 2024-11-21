@@ -5,9 +5,8 @@
 
 header {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
-    height: 70px;
+    height: auto;
     background-color: black;
     align-items: center;
     flex-direction: row;
@@ -18,6 +17,38 @@ header h1 {
     margin-left: 20px;
     color: white;
     font-size: 35px;
+}
+
+
+.logo-container{
+    width: 410px;
+    height: auto;
+    position: relative;
+    margin: 10px;
+}
+
+.logo-container img{
+    width: 400px;
+    height: auto;
+}
+
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: flex-end;
+    width: 100%;
+}
+.navbar{
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 15px;
 }
 
 body {

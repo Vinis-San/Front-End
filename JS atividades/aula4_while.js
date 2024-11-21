@@ -1,5 +1,5 @@
 function carregarcatalogo() {
-    for (let i = 0; i < 200; i++) {
+    for (let i = 0; i < 100; i++) {
         document.getElementById('catalogo').innerHTML += `<div class="container_catalogo">
                 <img src="/imagens/diario de um banana.jpg" alt="Imagem do Livro">
                 <div class="description">
