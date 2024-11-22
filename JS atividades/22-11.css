@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --corprincipal: #fff;
+    --corcontraste: rgb(58, 58, 58);
+}
+
+body {
+    background-color: white;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #333333;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+header h1 {
+    margin-left: 20px;
+    color: white;
+    font-size: 35px;
+}
+
+
+.logo-container {
+    width: 410px;
+    height: auto;
+    position: relative;
+    margin: 10px;
+}
+
+.logo-container img {
+    width: 400px;
+    height: auto;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.navbar {
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 15px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+#movies-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #333333;
+    flex-wrap: wrap;
+}
+
+.container_filmes{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+    margin: 10px;
+    background-color: beige;
+}

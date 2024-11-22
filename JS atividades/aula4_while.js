@@ -8,7 +8,8 @@ function carregarcatalogo() {
         ['/imagens/Hackeando tudo.jpg','Hackeando Tudo','R$19,99'],
         ['/imagens/me poupe.jpg','Me poupe!','R$29,99'],
         ['/imagens/Negro na Russia.jpg','Negro na Russia','R$34,99'],
-        ['/imagens/Capa1.webp','Antes que você diga adeus','R$34,99']
+        ['/imagens/Capa1.webp','livro Meloso','R$34,99'],
+        ['/imagens/imigranteilegal.jpg','Imigrante Ilegal','R$14,99']
         
     ]
 
