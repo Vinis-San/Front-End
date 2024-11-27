@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(45deg, #1DA1F2, #2795D9);
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px  solid white;
+}
+
+header #containerlogo {
+    display: flex;
+    width: 150px;
+    height: 100px;
+    padding: 20px;
+}
+
+
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 1000px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 20px;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #1DA1F2, #2795D9);
+}
+
+.container_banner {
+    width: 90%;
+    height: auto;
+    /* Ajuste automático de altura */
+    background-color: rgb(41, 41, 41);
+    margin: 10px;
+    margin-top: 70px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    /* Centralizar o iframe horizontalmente */
+    align-items: center;
+    /* Centralizar o iframe verticalmente */
+    border-radius: 20px;
+}
+
+.container_banner iframe {
+    width: 100%;
+    height: calc(50vw * 9 / 16);
+    /* Mantendo a proporção 16:9 */
+    max-width: 100%;
+    /* Garantir que o iframe não ultrapasse a largura da container */
+    border-radius: 20px;
+}
+
+.containermaiorcards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h2 {
+    font-size: 70px;
+    color: white;
+
+
+}
+
+.containermenorcards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.cardinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: auto;
+    color: white;
+    background: linear-gradient(45deg, #229eeb, #1e85c5);
+    border-radius:0px 70px 0px 70px ;
+    margin: 20px;
+    margin-bottom: 100px;
+    padding: 20px;
+    font-size: 30px;
+    transition: 0.5s;
+
+}
+
+.cardinfo:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: auto;
+    color: white;
+    background: linear-gradient(45deg, #229eeb, #1e85c5);
+    border-radius: 70px 0px 70px 0px;
+    margin: 20px;
+    margin-bottom: 100px;
+    padding: 20px;
+    font-size: 30px;
+    transform: scale(1.05);
+
+}
+
+.cardinfo p {
+    font-size: 25px;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cardinfo .Titulocard {
+    font-size: 55px;
+}
+
+.cardinfo .btnsaibamais {
+    border: none;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    text-decoration: double;
+    background-color: white;
+    color: #1DA1F2;
+    border-radius: 0px 10px 0px 10px;
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px #0e6499
+}
+
+.cardinfo .btnsaibamais:hover {
+    border: none;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    text-decoration: double;
+    background-color: #1e85c5;
+    color: #ffffff;
+    border-radius: 0px 10px 0px 10px;
+    box-shadow: 2px 2px 2px white;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #1DA1F2, #2795D9);
+    ;
+}
+
+footer .containerleft {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+footer .containerleft a{
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    margin:20px;
+    font-size: 20px;
+}
+
+footer .containerright {
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 20px;
+}

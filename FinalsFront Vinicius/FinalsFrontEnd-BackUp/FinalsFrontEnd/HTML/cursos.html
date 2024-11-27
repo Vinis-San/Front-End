@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de TI</title>
+    <link rel="stylesheet" href="/CSS/cursos.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="containerlogo">
+            <img src="/Imagens/logo Oráculo.png" alt="Logo Oráculo">
+        </div>
+        <div class="containerlinks">
+            <nav>
+                <a href="/HTML/index.html">Início</a>
+                <a href="/HTML/biblioteca.html">Biblioteca</a>
+                <a href="/HTML/cursos.html">Quiz</a>
+                <a href="/HTML/sobre.html">Sobre Nós</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="quiz-container">
+        <div id="quiz">
+            <div class="question-container">
+                <p id="question">Qual é o sistema operacional mais utilizado no mundo?</p>
+            </div>
+
+            <div class="options-container">
+                <button class="option-btn" onclick="checkAnswer(1)">Windows</button>
+                <button class="option-btn" onclick="checkAnswer(2)">Linux</button>
+                <button class="option-btn" onclick="checkAnswer(3)">MacOS</button>
+                <button class="option-btn" onclick="checkAnswer(4)">Android</button>
+            </div>
+        </div>
+
+        <div id="result" class="result">
+            <p id="result-text"></p>
+            <button onclick="nextQuestion()">Próxima Pergunta</button>
+        </div>
+    </main>
+    <footer>
+        <div class="containerleft"><a href="/HTML/index.html">Todos os Direitos Reservados</a></div>
+        <div class="containerright">
+            <h4>Quem Somos?</h4>
+            <p>Somos um Grupo de Aprendizes em TI, atualmente estamos a Serviço da Brasal Refrigerantes, mas também
+                fazemos Freela, Somos Willian Roscoe, Rudson Martins e Vinícius Andrade</p>
+        </div>
+    </footer>
+    <script src="/JavaScript/cursos.js"></script>
+</body>
+
+</html>
