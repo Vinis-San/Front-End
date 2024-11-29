@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de TI</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="containerlogo">
+            <img src="/pitagoras.png" alt="Logo Oráculo">
+        </div>
+        <div class="containerlinks">
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="biblioteca.html">Biblioteca</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="sobre.html">Sobre Nós</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="quiz-container">
+        <div id="quiz">
+            <div class="question-container">
+                <p id="question">Qual é o sistema operacional mais utilizado no mundo?</p>
+            </div>
+
+            <div class="options-container">
+                <button class="option-btn" onclick="checkAnswer(0)">Windows</button>
+                <button class="option-btn" onclick="checkAnswer(1)">Linux</button>
+                <button class="option-btn" onclick="checkAnswer(2)">MacOS</button>
+                <button class="option-btn" onclick="checkAnswer(3)">Android</button>
+            </div>
+        </div>
+
+        <!-- Seção de resultado -->
+        <div id="result" class="result" style="display: none;">
+            <p id="result-text"></p>
+            <button onclick="nextQuestion()">Próxima Pergunta</button> <!-- Isso será escondido após o final -->
+        </div>
+
+        <!-- Seção de finalização -->
+        <div id="finalResult" class="final-result" style="display: none;">
+            <h2>Parabéns, você completou o quiz!</h2>
+            <p class="ponto" id="final-score"></p>
+            <button onclick="restartQuiz()">Reiniciar Quiz</button> <!-- Botão para reiniciar -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="containerleft"><a href="index.html">Todos os Direitos Reservados</a></div>
+        <div class="containerright">
+            <h4>Quem Somos?</h4>
+            <p>Somos um Grupo de Aprendizes em TI, atualmente estamos a Serviço da Brasal Refrigerantes, mas também fazemos Freela, Somos Willian Roscoe, Rudson Martins e Vinícius Andrade</p>
+        </div>
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>
