@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+
+        .bg-coca-cola {
+            background-color: #f40009;
+        }
+
+        .btn-coca-cola {
+            background-color: #f40009;
+            color: white;
+            border: none;
+        }
+
+        .btn-coca-cola:hover {
+            background-color: #d10000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-danger">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="/images/pepsi logo.png">Conceite</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="/index.html">início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/pages/carrinho.html">Carrinho</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Catálogo de Roupas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-black" href="#">Masculino</a></li>
+                                <li><a class="dropdown-item text-black" href="#">Feminino</a></li>
+                                <li><a class="dropdown-item text-black" href="#">Criança</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5">
+        <h1>Catálogo de Drinks</h1>
+        <div class="btn-group mb-2" role="group" aria-label="Botões de letras"> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('a')">A</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('b')">B</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('c')">C</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('d')">D</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('e')">E</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('f')">F</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('g')">G</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('h')">H</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('i')">I</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('j')">J</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('k')">K</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('l')">L</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('m')">M</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('n')">N</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('o')">O</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('p')">P</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('q')">Q</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('r')">R</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('s')">S</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('t')">T</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('u')">U</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('v')">V</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('w')">W</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('x')">X</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('y')">Y</button> <button type="button"
+                class="btn btn-coca-cola" onclick="fetchDrinks('z')">Z</button> </div>
+        <section> <input type="text" class="form-control mb-3" id="drinkName" placeholder="Digite o nome do drink">
+            <button type="button" class="btn btn-success" onclick="searchDrink()">Buscar Drink</button> </section>
+        <div id="drinkList" class="row mt-3"></div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/scriptchamardrinks.js"></script>
+</body>
+
+</html>
