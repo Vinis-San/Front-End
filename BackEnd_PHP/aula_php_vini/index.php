@@ -15,6 +15,5 @@
      require_ONCE "script/test2.php"
      ?>
 </body>
-
 </html>
 

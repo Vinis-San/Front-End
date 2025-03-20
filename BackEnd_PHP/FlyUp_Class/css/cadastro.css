@@ -1,0 +1,99 @@
+*{
+    overflow: hidden;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_form{
+    background: #2a2a3b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    color: #717171;
+    font-family: 'Arial', sans-serif;
+    width: 80dvh;
+    height: auto;
+
+}
+.container_titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    margin-bottom: 1vw;
+}
+.form_group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 1.5vw;
+    gap: 0.5vw;
+
+
+}
+
+.form_group input,textarea{
+    width: 80%;
+    padding: 12px 16px;
+    margin: 1px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: #1d1f298a;
+    border: 1px solid #414141;
+}
+
+textarea{
+    resize: vertical;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    height: 10vw;
+}
+.containerbtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vw;
+}
+form button{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #717171;
+    font-weight: 600;
+    width: 80%;
+    background: #1d1f298a;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: color 1s;
+}
+
+form button:hover{
+    background-color: #862dda;
+    color: white;
+}
