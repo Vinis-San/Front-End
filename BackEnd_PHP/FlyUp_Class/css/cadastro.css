@@ -1,23 +1,33 @@
-*{
-    overflow: hidden;
+body{
+    overflow: auto;
 }
 main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 90dvh;
     align-items: center;
     justify-content: center;
 }
 
-header div{
+header div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-
-.card_form{
+.container-form{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.card_form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start ;
     background: #2a2a3b;
     padding: 20px;
     border-radius: 10px;
@@ -25,31 +35,39 @@ header div{
     margin: 10px;
     color: #717171;
     font-family: 'Arial', sans-serif;
-    width: 80dvh;
+    width: auto;
+    max-width: 90%;
     height: auto;
-
+    max-height: 90%;
 }
-.container_titulo{
+
+.container_titulo {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     width: 100%;
     margin-bottom: 1vw;
 }
-.form_group{
+
+.form_group {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    margin-bottom: 1.5vw;
+    margin-bottom: 1em;
     gap: 0.5vw;
-
+    width: 100%;
 
 }
-
-.form_group input,textarea{
-    width: 80%;
+.fourm_grou{
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+.form_group input {
+    width: 95%;
     padding: 12px 16px;
     margin: 1px;
     border-radius: 8px;
@@ -59,25 +77,19 @@ header div{
     border: 1px solid #414141;
 }
 
-textarea{
-    resize: vertical;
-    overflow: auto;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    height: 10vw;
-}
-.containerbtn{
+
+.containerbtn {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1vw;
+    margin-bottom: 0 0 5px 5px;
 }
-form button{
+
+.containerbtn button {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    align-self: flex-start;
     font-family: inherit;
     color: #717171;
     font-weight: 600;
@@ -93,7 +105,7 @@ form button{
     transition: color 1s;
 }
 
-form button:hover{
+form button:hover {
     background-color: #862dda;
     color: white;
 }

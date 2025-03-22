@@ -16,7 +16,7 @@
         <ul>
             <li><a href="#">Início</a></li>
             <li><a href="pages/pag_login.php">Login</a></li>
-            <li><a href="pages/ver_licao.php">Sobre Nós</a></li>
+            <li><a href="pages/ver_licao.php">Lições</a></li>
         </ul>
     </header>
     <main>

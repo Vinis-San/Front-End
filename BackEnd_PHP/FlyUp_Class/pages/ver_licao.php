@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/verlicao.css">
     <title>Visualizar Lição</title>
 </head>
+<?php include '../css/ver_licaoCSS.php'; ?>
 
 <body>
     <?php
@@ -15,20 +16,20 @@
 
     // Consulta para buscar e agrupar as lições por mês e data
     $stmt = $conexao->prepare("
-    SELECT 
-        id, titulo, DATE_FORMAT(data_postagem, '%Y-%m') AS mes, 
-        DATE_FORMAT(data_postagem, '%d') AS dia 
-    FROM licoes 
-    ORDER BY data_postagem DESC
-");
+        SELECT 
+            id, titulo, DATE_FORMAT(data_postagem, '%Y-%m') AS mes, 
+            DATE_FORMAT(data_postagem, '%d') AS dia 
+        FROM licoes 
+        ORDER BY data_postagem DESC
+    ");
     $stmt->execute();
     $resultado = $stmt->get_result();
 
     // Organiza os dados em uma hierarquia: Mês > Dia > Lições
     $licoesPorMes = [];
     while ($licao = $resultado->fetch_assoc()) {
-        $mes = $licao['mes']; // Exemplo: "2025-03"
-        $dia = $licao['dia']; // Exemplo: "20"
+        $mes = $licao['mes'];
+        $dia = $licao['dia'];
 
         if (!isset($licoesPorMes[$mes])) {
             $licoesPorMes[$mes] = [];
@@ -40,50 +41,54 @@
 
         $licoesPorMes[$mes][$dia][] = [
             'id' => $licao['id'],
-            'titulo' => $licao['titulo']
+            'titulo' => htmlspecialchars($licao['titulo']) // Segurança contra XSS
         ];
     }
     ?>
 
-
     <header>
         <a class="titulo" href="../index.php">
-            <h1> FlyUp Class</h1>
+            <h1>FlyUp Class</h1>
         </a>
         <ul>
             <li><a href="../index.php">Início</a></li>
             <li><a href="pag_login.php">Login</a></li>
-            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="ver_licao.php">Lições</a></li>
         </ul>
     </header>
 
     <main>
-        <h2>Lições por Mês e Data</h2>
         <div class="licoes-container">
-            <?php foreach ($licoesPorMes as $mes => $dias): ?>
-                <div class="mes">
-                    <h3><?php echo date('F Y', strtotime($mes)); // Exibe o mês e ano, ex.: "Março 2025" 
-                        ?></h3>
+            <h2>Repositório de Materiais de Discipulados FlyUp</h2>
+
+
+            <div class="container-dia" id="container-dia" >
+                <?php foreach ($licoesPorMes as $mes => $dias): ?>
+                    <h2><?php echo date('F Y', strtotime($mes)); // Mês formatado 
+                        ?></h2>
                     <?php foreach ($dias as $dia => $licoes): ?>
-                        <div class="dia">
-                            <h4>Dia <?php echo $dia; ?></h4>
+                        <h5>Dia <?php echo $dia; ?></h5>
+                        <ul>
                             <?php foreach ($licoes as $licao): ?>
-                                <div class="licao-card">
-                                    <a href="ver_licao.php?id=<?php echo $licao['id']; ?>">
-                                        <?php echo htmlspecialchars($licao['titulo']); ?>
+                                <li>
+                                    <a href="ler_licao.php?id=<?php echo $licao['id']; ?>">
+                                        <?php echo $licao['titulo']; ?>
                                     </a>
-                                </div>
+                                </li>
                             <?php endforeach; ?>
-                        </div>
+                        </ul>
                     <?php endforeach; ?>
-                </div>
-            <?php endforeach; ?>
+                <?php endforeach; ?>
+            </div>
+
+
         </div>
     </main>
 
     <footer>
         <p>Todos os Direitos Reservados! Sousa Media</p>
     </footer>
+    <script src="../script_JS/verlicao.js"></script>
 </body>
 
 </html>

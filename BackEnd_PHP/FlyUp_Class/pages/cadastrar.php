@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/arcadia.css">
     <link rel="stylesheet" href="../css/cadastro.css">
+    <link href="https://cdn.quilljs.com/1.3.7/quill.snow.css" rel="stylesheet">
     <title>Registro de Lição</title>
 </head>
 
@@ -62,24 +63,37 @@
                 <h1>Cadastro de Lição</h1>
             </div>
 
-            <form action="cadastrar.php" method="post">
+            <form class="container-form" action="cadastrar.php" method="post">
+                <!-- Grupo para o título da lição -->
                 <div class="form_group">
                     <label for="titulo">Título da lição</label>
-                    <input type="text" id="title" name="titulo" placeholder="Digite título da lição" required>
+                    <input type="text" id="titulo" name="titulo" placeholder="Digite título da lição" required>
                 </div>
-                <div class="form_group">
+
+                <div class="form_grou">
+                    <?php include '../css/theme-editor.php'; ?>
+
                     <label for="conteudo">Conteúdo</label>
-                    <textarea name="conteudo" id="conteudo" placeholder="Digite o Conteúdo da lição" rows="1000000"></textarea>
+                    <div id="editor-container"></div>
+                    <input type="hidden" name="conteudo" id="conteudo" required>
                 </div>
-                <div class="containerbtn"><button type="submit">Cadastrar</button></div>
+
+
+
+                <!-- Mensagem de sucesso, se existir -->
                 <?php if (!empty($mensagem)): ?>
-                <p style="color: green;"><?php echo $mensagem; ?></p>
-            <?php endif; ?>
+                    <p style="color: green;"><?php echo htmlspecialchars($mensagem, ENT_QUOTES, 'UTF-8'); ?></p>
+                <?php endif; ?>
+                <div class="containerbtn">
+                    <button type="submit">Cadastrar</button>
+                </div>
             </form>
+
 
         </div>
     </main>
     <footer>Todos os Direitos Reservados! Sousa Media</footer>
+    <?php include '../script_JS/cad_JS.php'; ?>
 </body>
 
 </html>

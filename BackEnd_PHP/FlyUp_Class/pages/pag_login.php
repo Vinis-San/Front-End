@@ -55,7 +55,7 @@
         <ul>
             <li><a href="../index.php">Início</a></li>
             <li><a href="pag_login.php">Login</a></li>
-            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="ver_licao.php">Lições</a></li>
         </ul>
     </header>
     <main>
