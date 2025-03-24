@@ -11,50 +11,105 @@ if ($id) {
     $licao = $resultado->fetch_assoc();
 
     if ($licao) {
-        ?>
+?>
         <!DOCTYPE html>
         <html lang="pt-br">
+
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title><?php echo htmlspecialchars($licao['titulo']); ?></title>
             <style>
-                body {
-                    font-family: Arial, sans-serif;
-                    padding: 20px;
-                    background-color: #f9f9f9;
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
                 }
+
+                body {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: rgb(207, 207, 207);
+                    min-height: 100vh;
+                    width: 100%;
+                    height: 100%;
+                    /* Texto branco para contraste */
+                    font-family: "Arial", sans-serif;
+                    /* Fonte limpa e legível */
+                    background: url("../images/fundo_site.png");
+                    background-size: cover;
+                    /* Faz com que a imagem cubra todo o elemento */
+                    background-position: center;
+                    /* Centraliza a imagem */
+                    background-repeat: no-repeat;
+                    /* Evita repetição da imagem */
+                    background-attachment: fixed;
+                }
+
+
+                .container-titulo {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40%;
+                    height: auto;
+                    padding: 0.5rem;
+                    border-radius: 10px;
+                    background-color: rgba(29, 31, 41, 0.77);
+                    backdrop-filter: blur(10px);
+                    box-shadow: 5px 5px 5px rgba(24, 24, 24, 0.5);
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                    font-size: 1.5em;
+                }
+
                 .conteudo {
-                    background: #fff;
+                    width: 90%;
+                    color: rgb(238, 238, 238);
                     padding: 20px;
                     border-radius: 8px;
-                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
                     text-align: justify;
+                    background-color: rgba(29, 31, 41, 0.77);
+                    backdrop-filter: blur(10px);
+                    box-shadow: 5px 5px 5px rgba(24, 24, 24, 0.5);
+                    line-height: 1.5;
                 }
+
                 button {
                     margin-top: 20px;
                     padding: 10px 20px;
-                    background-color: #862dda;
+                    background-color: rgba(41, 41, 41, 0.95);
                     color: white;
                     border: none;
                     border-radius: 5px;
                     cursor: pointer;
+                    transition: 0.7s;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
                 }
+
                 button:hover {
-                    background-color: #3c0e68;
+                    background-color: white;
+                    color: #5E1BB0;
+                    transform: matrix(1.1, 0, 0, 1.1, 0, 0);
                 }
             </style>
         </head>
+
         <body>
-            <h1><?php echo htmlspecialchars($licao['titulo']); ?></h1>
+            <div class="container-titulo">
+                <h1><?php echo htmlspecialchars($licao['titulo']); ?></h1>
+            </div>
             <div class="conteudo">
                 <!-- Renderiza o conteúdo HTML vindo do banco -->
                 <?php echo $licao['conteudo']; ?>
             </div>
             <button onclick="window.history.back()">← Voltar</button>
         </body>
+
         </html>
-        <?php
+<?php
     } else {
         echo "Lição não encontrada.";
     }

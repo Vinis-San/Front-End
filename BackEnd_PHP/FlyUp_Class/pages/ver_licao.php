@@ -59,10 +59,12 @@
 
     <main>
         <div class="licoes-container">
-            <h2>Repositório de Materiais de Discipulados FlyUp</h2>
+            <div class="container-titulo">
+                <h2>Banco de <span>Pythagoras</span></h2>
+            </div>
 
 
-            <div class="container-dia" id="container-dia" >
+            <div class="container-dia" id="container-dia">
                 <?php foreach ($licoesPorMes as $mes => $dias): ?>
                     <h2><?php echo date('F Y', strtotime($mes)); // Mês formatado 
                         ?></h2>

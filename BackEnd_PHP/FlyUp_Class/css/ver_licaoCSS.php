@@ -1,8 +1,21 @@
 <style>
-    .licoes-container h2 {
-        font-size: 2em;
-        margin-left: 1em;
+    .container-titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: auto;
+        padding: 0.5rem;
+        border-radius: 10px;
+        background-color: rgba(29, 31, 41, 0.77);
+        backdrop-filter: blur(10px);
+        box-shadow: 5px 5px 5px rgba(24, 24, 24, 0.5);
         margin-bottom: 1em;
+        font-size: 1.5em;
+    }
+
+    .container-titulo span {
+        color:rgb(102, 28, 170);
     }
 
     .licoes-container {
@@ -21,10 +34,11 @@
     .container-dia {
         min-height: 80%;
         width: 80%;
-        padding: 5px 10px;
-        border: 1px solid #414141;
-        border-radius: 5px;
-        background-color: #1d1f298a;
+        padding: 10px 15px;
+        border-radius: 15px;
+        background-color: rgba(29, 31, 41, 0.77);
+        backdrop-filter: blur(10px);
+        box-shadow: 5px 5px 5px rgba(24, 24, 24, 0.5);
     }
 
     .container-dia ul {
@@ -33,12 +47,8 @@
 
     .container-dia li {
         margin-bottom: 1em;
-        border: 1px solid;
-        border-color: aliceblue;
-        border-top-color: rgb(39, 39, 42);
-        border-right-color: rgb(39, 39, 42);
-        border-bottom-color: rgb(39, 39, 42);
-        border-left-color: rgb(39, 39, 42);
+        border: 2px solid rgba(71, 16, 78, 0.64);
+        border-radius: 3px;
         padding-bottom: 0.2em;
         padding-top: 0.2em;
     }
