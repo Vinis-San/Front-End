@@ -15,10 +15,9 @@ CREATE DATABASE FlyUp_Class
     titulo VARCHAR(255) NOT NULL,                   -- Título da lição.
     conteudo TEXT NOT NULL,                         -- Texto completo da lição.
     data_postagem DATETIME DEFAULT CURRENT_TIMESTAMP -- Data e hora de postagem.
+    professor_matricula int,
+    Foreign Key (professor_matricula) REFERENCES professor(matricula)
 );
 
-ALTER TABLE licoes
-ADD COLUMN professor_matricula INT,
-ADD FOREIGN KEY (professor_matricula) REFERENCES professor(matricula);
 
 
