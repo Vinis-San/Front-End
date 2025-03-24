@@ -19,6 +19,7 @@ if ($id) {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title><?php echo htmlspecialchars($licao['titulo']); ?></title>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
             <style>
                 * {
                     margin: 0;
@@ -45,6 +46,7 @@ if ($id) {
                     background-repeat: no-repeat;
                     /* Evita repetição da imagem */
                     background-attachment: fixed;
+                    font-family: 'roboto', sans-serif;
                 }
 
 
@@ -52,7 +54,7 @@ if ($id) {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 40%;
+                    min-width: 40%;
                     height: auto;
                     padding: 0.5rem;
                     border-radius: 10px;
@@ -67,8 +69,8 @@ if ($id) {
                 .conteudo {
                     width: 90%;
                     color: rgb(238, 238, 238);
-                    padding: 20px;
-                    border-radius: 8px;
+                    padding: 1.5em 2em 1em 2em ;
+                    border-radius: 12px;
                     text-align: justify;
                     background-color: rgba(29, 31, 41, 0.77);
                     backdrop-filter: blur(10px);

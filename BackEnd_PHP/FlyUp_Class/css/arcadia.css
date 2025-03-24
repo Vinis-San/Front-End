@@ -16,6 +16,7 @@ body {
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita repetição da imagem */
   background-attachment: fixed;
+  font-family: 'roboto', sans-serif;
 }
 
 header {

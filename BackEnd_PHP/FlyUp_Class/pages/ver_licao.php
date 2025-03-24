@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/arcadia.css"> <!-- Adapte o caminho do seu CSS -->
     <link rel="stylesheet" href="../css/verlicao.css">
     <title>Visualizar Lição</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
 <?php include '../css/ver_licaoCSS.php'; ?>
 
