@@ -21,13 +21,18 @@ CREATE table receitas(
     id int auto_increment not null,
     titulo varchar(100) not null,
     descricao varchar(155) not null,
-    receita char not null,
+    receita varchar(10000) not null,
     chef_id int not null,
     PRIMARY key(id),
     Foreign Key (chef_id) REFERENCES gastrocode.chef(id)
 );
+
 insert into gastrocode.chef(nome_completo, apelido, senha) values
 ("Admin Totalis","admin","admin123");
 
-SELECT * from gastrocode.chef
+insert into gastrocode.chef(nome_completo, apelido, senha) values
+("Gordon Ramsay","gordon","gordon123");
+SELECT * from gastrocode.receitas;
 
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'root';
+FLUSH PRIVILEGES;

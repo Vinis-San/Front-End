@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GastroCode</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/headerfooter.css">
 </head>
 <?php
 session_start();
@@ -31,6 +32,12 @@ switch ($page) {
         break;
     case 'login':
         include 'pages/login.php';
+        break;
+    case 'postar_receita':
+        include 'pages/postar_receita.php';
+        break;
+    case 'ler_receita':
+        include 'pages/ler_receita.php';
         break;
     default:
         include 'pages/home.php';

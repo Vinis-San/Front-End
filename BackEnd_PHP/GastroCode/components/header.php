@@ -1,6 +1,6 @@
 <header>
     <div class="container_logo">
-        <h1><a href="#">GastroCode</a></h1>
+        <h1><a href="index.php?page=home">GastroCode</a></h1>
     </div>
     <div class="container_navbar">
         <ul>
