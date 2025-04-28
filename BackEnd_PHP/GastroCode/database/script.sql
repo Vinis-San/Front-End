@@ -31,8 +31,11 @@ insert into gastrocode.chef(nome_completo, apelido, senha) values
 ("Admin Totalis","admin","admin123");
 
 insert into gastrocode.chef(nome_completo, apelido, senha) values
+("Rudson Martins","ruds","rudson123");
+
+insert into gastrocode.chef(nome_completo, apelido, senha) values
 ("Gordon Ramsay","gordon","gordon123");
-SELECT * from gastrocode.receitas;
+SELECT * from gastrocode.chef;
 
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'root';
 FLUSH PRIVILEGES;

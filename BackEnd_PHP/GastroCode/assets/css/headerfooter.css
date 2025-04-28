@@ -34,6 +34,11 @@ header {
   border-radius: 10px;
 }
 
+.container_logo{
+  display: flex;
+  align-items: center;
+}
+
 .container_navbar {
   display: flex;
   justify-content: space-between;
@@ -48,6 +53,11 @@ ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
+}
+
+li {
+  margin: 0 10px;
+  background-color: #000000;
 }
 /* Estilizando o Footer */
 footer {
@@ -71,5 +81,5 @@ footer a {
 
 header a:hover,
 footer a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }

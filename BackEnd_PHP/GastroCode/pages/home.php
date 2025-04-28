@@ -14,7 +14,7 @@
 
     foreach ($receitas as $receita): ?>
         <div class="receita-preview">
-            <h3><a href="pages/ver_receita.php?id=<?php echo $receita['id']; ?>"><?php echo htmlspecialchars($receita['titulo']); ?></a></h3>
+            <h3><a href="index.php?page=ler_receita&id=<?php echo $receita['id']; ?>"><?php echo htmlspecialchars($receita['titulo']); ?></a></h3>
             <p><?php echo htmlspecialchars(substr($receita['descricao'], 0, 100)); ?>...</p>
         </div>
     <?php endforeach; ?>
